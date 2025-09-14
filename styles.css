@@ -16,7 +16,7 @@ a {
 nav {
     position: sticky;
     -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
     top: 0;
     overflow: hidden;
     display:flex;
@@ -33,6 +33,9 @@ nav {
 .nav-title h2{
     font-weight: 550;
     color: rgb(83, 77, 77);
+    border: dashed;
+    border-radius: 12px;
+    padding: 1px 4px 1px 4px;
 }
 
 .nav-links {
@@ -72,6 +75,10 @@ main {
 .hero-text h1 {
     margin-bottom: 10px;
     font-size:3.5rem;
+}
+
+.hero-text h1 > a {
+    text-decoration: underline;
 }
 
 .hero-text h3 {
@@ -281,6 +288,7 @@ footer {
     align-items: center;
     gap:10px;
     padding: 2px 4px;
+    text-decoration: underline;
 }
 
 .mail img, .linkedin-github img {
@@ -303,6 +311,10 @@ footer {
 
 .linkedin-github a:hover {
     transform: scale(1.15);
+}
+
+.linkedin-github a:active {
+    transform: scale(0.95);
 }
 
 
